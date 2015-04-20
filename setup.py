@@ -20,7 +20,7 @@ def convert_to_str(d):
     the values it is supplied.
     """
     d2 = {}
-    for k, v in d.items():
+    for k, v in list(d.items()):
         k = str(k)
         if type(v) in [list, tuple]:
             d2[k] = [str(a) for a in v]

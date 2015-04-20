@@ -10,6 +10,7 @@ from django.views.generic import ListView, CreateView, RedirectView
 from sorl.thumbnail.shortcuts import get_thumbnail
 
 from .models import Image, ImageSet
+from functools import reduce
 
 
 class BrowseImages(ListView):
